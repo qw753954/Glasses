@@ -1,0 +1,15 @@
+.nav-link {
+    font-weight: bold;
+    &:hover {
+        background-color: rgba(255, 255, 255, .2);
+        border-radius: 100px;
+    }
+}
+
+.pagination .page-link {
+    white-space: nowrap;
+    @include media-breakpoint-down(sm) {
+        padding: 12px;
+        font-size: 14px;
+    }
+}

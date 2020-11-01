@@ -1,0 +1,42 @@
+.foIcon {
+    width: 50px;
+    right: 0;
+    bottom: 0;
+}
+
+.foSocial {
+    transition: .3s;
+    &:hover {
+        opacity: .75;
+    }
+}
+
+.foContact {
+    img {
+        width: 44px;
+    }
+    a {
+        transition: .4s;
+        &:hover {
+            letter-spacing: 1px;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .foSocial {
+        width: 28px;
+    }
+    .foContact {
+        font-size: 20px;
+        img {
+            width: 24px;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .copyright {
+        font-size: 14px;
+    }
+}

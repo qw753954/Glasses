@@ -1,0 +1,63 @@
+.post {
+    a:hover {
+        color: $primary !important;
+        background-color: transparent;
+    }
+    .tagMain,
+    .tag li {
+        line-height: 1.8;
+    }
+    .arrow {
+        border-bottom: 2px dotted transparent;
+        &:hover {
+            color: black !important;
+            border-bottom: 2px dotted #333;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        h2 {
+            font-size: 32px;
+        }
+        h3,
+        p {
+            font-size: 16px;
+        }
+        .arrow {
+            font-size: 16px;
+            img {
+                width: 18px;
+            }
+        }
+        .tagMain {
+            font-size: 18px;
+        }
+        .tag {
+            img {
+                width: 30px;
+            }
+            h3 {
+                font-size: 22px;
+            }
+            li {
+                font-size: 18px;
+            }
+        }
+    }
+    @include media-breakpoint-down(xxs) {
+        h2 {
+            font-size: 22px;
+        }
+        .tagMain,
+        .tag li {
+            font-size: 16px;
+        }
+        .share {
+            span {
+                font-size: 16px;
+            }
+            a {
+                font-size: 24px;
+            }
+        }
+    }
+}

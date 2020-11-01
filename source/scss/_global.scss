@@ -1,0 +1,12 @@
+::selection {
+    background-color: $primary;
+    color: white;
+}
+
+a {
+    display: block;
+}
+
+button:focus {
+    outline: none;
+}

@@ -1,0 +1,163 @@
+.ham:hover {
+    border-radius: 0px;
+}
+
+.banner {
+    height: 800px;
+    background: url(../img/banner/banner.png) no-repeat center center / cover;
+    h2 {
+        line-height: 1.2;
+    }
+    @include media-breakpoint-down(md) {
+        h2 {
+            font-size: 52px;
+        }
+        span {
+            font-size: 30px;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        height: 400px;
+        background-image: url(../img/banner/banner-sm.png);
+        h2 {
+            font-size: 42px;
+        }
+        span {
+            font-size: 26px;
+        }
+    }
+    @include media-breakpoint-down(xs) {
+        h2 {
+            font-size: 36px;
+        }
+        span {
+            font-size: 22px;
+        }
+    }
+    @include media-breakpoint-down(xxs) {
+        h2 {
+            font-size: 28px;
+        }
+        span {
+            font-size: 17px;
+        }
+    }
+}
+
+.title {
+    @include media-breakpoint-down(md) {
+        font-size: 42px;
+    }
+    @include media-breakpoint-down(sm) {
+        font-size: 30px;
+    }
+    @include media-breakpoint-down(xxs) {
+        font-size: 26px;
+    }
+}
+
+.slogan {
+    li {
+        max-width: 250px;
+    }
+    .icon {
+        height: 100px;
+    }
+    @include media-breakpoint-down(md) {
+        h4 {
+            font-size: 20px;
+        }
+        .icon {
+            height: 80px;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        img {
+            width: 80px;
+        }
+    }
+}
+
+.classic {
+    @include media-breakpoint-down(lg) {
+        i {
+            font-size: 40px;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        i {
+            font-size: 28px;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        a {
+            color: white;
+        }
+        .sort {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            transition: .5s;
+            &:hover {
+                background-color: rgba(101, 3, 0, .25);
+            }
+        }
+    }
+}
+
+.coBrand {
+    background: url(../img/index/bg.png) no-repeat fixed center center/ cover;
+    .coPic {
+        height: 472px;
+        background: no-repeat center/ cover;
+        @include media-breakpoint-down(md) {
+            height: 250px;
+        }
+        @include media-breakpoint-down(xs) {
+            height: 280px;
+        }
+    }
+    .coPic1 {
+        background-image: url(../img/index/cobrand-1.png);
+    }
+    .coPic2 {
+        background-image: url(../img/index/cobrand-2.png);
+    }
+    a {
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, .5);
+        transition: .5s;
+        &:hover {
+            background-color: transparent;
+            color: white;
+        }
+    }
+    @include media-breakpoint-down(lg) {
+        ul {
+            font-size: 40px;
+        }
+    }
+    @include media-breakpoint-down(xxs) {
+        ul {
+            font-size: 32px;
+        }
+    }
+}
+
+.contact {
+    max-width: 730px;
+    p {
+        line-height: 30px;
+    }
+    @include media-breakpoint-down(md) {
+        max-width: 530px;
+        p {
+            font-size: 16px;
+        }
+    }
+}

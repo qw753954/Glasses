@@ -1,0 +1,93 @@
+.picBlog {
+    position: relative;
+    height: 400px;
+    background: no-repeat center center/ cover;
+    span {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: -15px;
+        left: -15px;
+        border: 2px solid rgba(170, 7, 1, .65);
+        opacity: 0;
+        transition: .4s;
+        @include media-breakpoint-down(sm) {
+            top: -7px;
+            left: -7px;
+            transition: .4s;
+        }
+    }
+    &:hover span {
+        opacity: 1;
+        border-width: 2px;
+    }
+    @include media-breakpoint-down(md) {
+        height: 300px;
+    }
+    @include media-breakpoint-down(sm) {
+        height: 200px;
+    }
+}
+
+.pB1 {
+    background-image: url(../img/blog/blog-1.png);
+}
+
+.pB2 {
+    background-image: url(../img/blog/blog-2.png);
+}
+
+.pB3 {
+    background-image: url(../img/blog/blog-3.png);
+}
+
+.pB4 {
+    background-image: url(../img/blog/blog-4.png);
+}
+
+.pB5 {
+    background-image: url(../img/blog/blog-5.png);
+}
+
+.blog {
+    @include media-breakpoint-down(md) {
+        h2 {
+            font-size: 28px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        h2 {
+            font-size: 24px;
+        }
+        h3 {
+            font-size: 16px;
+        }
+    }
+    @include media-breakpoint-down(xxs) {
+        h2 {
+            font-size: 18px;
+        }
+        h3,
+        span {
+            font-size: 14px;
+        }
+    }
+}
+
+.uploadDate {
+    color: rgba(0, 0, 0, .7);
+    font-weight: 500;
+}
+
+.more {
+    margin-right: -8px;
+    &:hover {
+        background: linear-gradient(#fff 50%, #aa070121 40%);
+    }
+}
